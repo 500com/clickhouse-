@@ -1,7 +1,7 @@
 # 目录结构
 1.  本地Local表
     * 本地目录
-    ![42af8f52514f8aa9c8904025fd3327d9](Clickhouse 分享01.resources/81B7B652-45E1-4C35-BD50-1D309B978039.png)
+    ![42af8f52514f8aa9c8904025fd3327d9](81B7B652-45E1-4C35-BD50-1D309B978039.png)
     
     >目录结构1992_1808_2672_3
     
@@ -31,10 +31,10 @@
  
 2.  Replica表
     * 本地目录
-    ![ca940fd56d6b7499f262c8f969800800](Clickhouse 分享01.resources/29E0AD6A-5F92-4E8B-80A9-80E8285C0D3D.png)
+    ![ca940fd56d6b7499f262c8f969800800](29E0AD6A-5F92-4E8B-80A9-80E8285C0D3D.png)
     和Local表一致
     * zk目录
-    ![0675369264d6d983181e4e28f72177a5](Clickhouse 分享01.resources/4D4AB055-33B2-465D-96C9-DC6B993EA505.png)
+    ![0675369264d6d983181e4e28f72177a5](4D4AB055-33B2-465D-96C9-DC6B993EA505.png)
     1.  Replica表需指定zk路径/clickhouse/tables/{**shard**}/**tablename**和replica参数
     
 ```
@@ -86,11 +86,11 @@ D -->|其他节点收到ZK更新信息| F[节点同步]
     
 3.  Distribute表
    * 本地目录
- ![dfd9376d069cae3ade1b2bebe3982730](Clickhouse 分享01.resources/8178F1C8-85AC-4724-91E4-A2B4DAC37816.png)
+ ![dfd9376d069cae3ade1b2bebe3982730](8178F1C8-85AC-4724-91E4-A2B4DAC37816.png)
  目录存的是底层表的连接方式
  
    * 配置config.xml
-   ![2f05ce4fce0911d2df5fd8d339660b71](Clickhouse 分享01.resources/5B6574F7-5090-480E-B0D5-EE53C6DE7589.png)
+   ![2f05ce4fce0911d2df5fd8d339660b71](5B6574F7-5090-480E-B0D5-EE53C6DE7589.png)
    类似路由表
    * 查询
         1.  shard之间可以并行查询加速
